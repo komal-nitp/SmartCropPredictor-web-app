@@ -1,6 +1,6 @@
-# 🌾 CropPredict – ML-Based Crop Recommendation Web App
+# 🌾 SmartCropPredictor– ML-Based Crop Recommendation Web App
 
-**Duration:** Mar 2025 – Apr 2025  
+**Duration:** june 2025 – July 2025  
 **Tech Stack:** Python, Flask, Scikit-learn, HTML, CSS, JavaScript
 
 ---
