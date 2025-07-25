@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿 Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card animate">
+            <h2>🌱 Predict the Best Crop </h2>
+            <form action="/result" method="post">
+                <label for="Nitrogen">🌾 Nitrogen:</label>
+                <input type="text" id="Nitrogen" name="Nitrogen" placeholder="e.g. 90" required>
+
+                <label for="Phosphorus">🧪 Phosphorus:</label>
+                <input type="text" id="Phosphorus" name="Phosphorus" placeholder="e.g. 42" required>
+
+                <label for="Potassium">🧬 Potassium:</label>
+                <input type="text" id="Potassium" name="Potassium" placeholder="e.g. 43" required>
+
+                <label for="Temperature">🌡 Temperature (°C):</label>
+                <input type="text" id="Temperature" name="Temperature" placeholder="e.g. 20.8" required>
+
+                <label for="Humidity">💧 Humidity (%):</label>
+                <input type="text" id="Humidity" name="Humidity" placeholder="e.g. 82" required>
+
+                <label for="ph">🧉 pH (0 - 14):</label>
+                <input type="text" id="ph" name="ph" placeholder="e.g. 6.5" required>
+
+                <label for="Rainfall">🌧 Rainfall (mm):</label>
+                <input type="text" id="Rainfall" name="Rainfall" placeholder="e.g. 202" required>
+
+                <input type="submit" value="🚀 Predict Crop">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

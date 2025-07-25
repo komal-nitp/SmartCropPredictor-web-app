@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Crop Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+   
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">🌾 Crop_Predict</div>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('page') }}">Predict</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Welcome to the Smart Crop Prediction System</h1>
+        <p>Empowering farmers with data-driven insights to choose the right crop for their soil and climate.</p>
+        <a href="{{ url_for('page') }}" class="predict-btn">🚀 Start Prediction</a>
+      </div>
+    </section>
+
+   <!-- Live Crop Data Section -->
+ <section class="live-data">
+      <h2>📊 Live Crop Insights</h2>
+      <div class="data-cards">
+        <div class="card">
+          <h3>🌾Wheat</h3>
+          <p>Soil Moisture: 45%</p>
+          <p>Temperature: 22°C</p>
+        </div>
+        <div class="card">
+          <h3>🌾Rice</h3>
+          <p>Soil Moisture: 70%</p>
+          <p>Temperature: 28°C</p>
+        </div>
+        <div class="card">
+          <h3>🌽Corn</h3>
+          <p>Soil Moisture: 50%</p>
+          <p>Temperature: 25°C</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>

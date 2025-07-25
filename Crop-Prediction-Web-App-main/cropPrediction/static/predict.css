@@ -1,0 +1,112 @@
+/* form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* max-width: 40rem; */
+    /* margin-left: 20%; */
+    /* margin-top: 100px;
+
+    padding: 50px; */
+/* }
+
+form label{
+    max-width: 200px;
+} */ 
+
+
+/* static/predict.css */
+
+ /* static/predict.css */
+
+/* Fullscreen gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0e811f, #58ecec);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* No scroll */
+}
+
+/* Centered card container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Animated card */
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a3d2f;
+}
+
+/* Form fields */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 8px 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #27e8f3;
+    box-shadow: 0 0 5px rgba(0, 201, 255, 0.6);
+}
+
+/* Submit button */
+input[type="submit"] {
+    padding: 10px;
+   background:  linear-gradient(135deg, #7fa903, #58ecec); /*  #00c9ff; */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #056213, #128787);
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
